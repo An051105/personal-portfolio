@@ -1,0 +1,162 @@
+* {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: centre;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1f2933;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #eb2588;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+}
+
+.hero img {
+  width: 220px;
+  border-radius: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  max-width: 400px;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background-color: #1e4fd8;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+  text-align: left;
+}
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: #1f2933;
+  text-align: center;
+}
+
+p, li {
+  font-size: 1rem;
+  color: #374151;
+   margin: 0.6rem auto;
+ 
+}
+ul {
+  margin-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+.contact-section {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-section p {
+  margin: 0.8rem 0;
+}
+.contact-section a {
+  display: inline-block;
+  margin-top: 0.3rem;
+}
