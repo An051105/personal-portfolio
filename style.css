@@ -1,3 +1,12 @@
+:root {
+  --navy: #0E1627;
+  --mauve: #BDB6B9;
+  --pink: #E5C5C1;
+  --prune: #7F6269;
+  --blush: #F4E1E0;
+  --white: #ffffff;
+}
+
 * {
   margin: 10;
   padding: 0;
@@ -6,13 +15,13 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9fafb;
-  color: #1f2933;
+  background-color:var(--blush) ;
+  color: var(--navy);
   line-height: 1.6;
 }
 
 header {
-  background: #ffffff;
+  background: var(--blush);
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
@@ -31,12 +40,12 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #1f2933;
+  color: var(--blush);
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #eb2588;
+  color: var(--pink);
 }
 
 .hero {
@@ -45,6 +54,13 @@ nav a:hover {
   justify-content: center;
   gap: 3rem;
   padding: 4rem 2rem;
+   background: linear-gradient(
+    135deg,
+    var(--navy),
+    var(--prune)
+  );
+  color: var(--white);
+  border-radius: 0 0 40px 40px;
 }
 
 .hero img {
@@ -54,11 +70,13 @@ nav a:hover {
 
 .hero-text h1 {
   font-size: 2.2rem;
+  color: var(--white);
 }
 
 .hero-text p {
   margin-top: 1rem;
   max-width: 400px;
+   color: var(--pink);
 }
 
 section {
@@ -68,6 +86,16 @@ section {
 .section-title {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
+   color: var(--navy);
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--prune);
+  margin: 8px auto 0;
+  border-radius: 10px;
 }
 
 .card-container {
@@ -77,16 +105,22 @@ section {
 }
 
 .card {
-  background: #ffffff;
+  background: var(--white);
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--prune);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08) ;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-left-color: var(--pink);
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #ffffff;
+   background: var(--navy);
+  color: var(--blush);
   font-size: 0.9rem;
 }
 
@@ -100,15 +134,16 @@ footer {
   display: inline-block;
   margin-top: 1.2rem;
   padding: 0.6rem 1.2rem;
-  background-color: #2563eb;
-  color: #ffffff;
+  background-color: var(--prune);
+  color: var(--white);
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9rem;
 }
 
 .btn:hover {
-  background-color: #1e4fd8;
+  background-color: var(--pink);
+  color:var(--navy);
 }
 .container {
   max-width: 900px;
@@ -160,3 +195,4 @@ li {
   display: inline-block;
   margin-top: 0.3rem;
 }
+
